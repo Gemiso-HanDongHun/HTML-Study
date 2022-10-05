@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+        /* 가상으로 li의 위쪽에 들어가는 것이 before이고 아래쪽에 들어가는 것이 after 이다 */
+
+
+        /* before, after 가상요소는 content 속성이 필수 */
+        li::before{
+            content: '번호';
+
+        } 
+        
+        /* 도형을 표현하려면 display 속성이 필수이다 */
+        li::after{
+            content: ' ';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: red;
+
+            /* 50% -> 원으로 바뀜 */
+            border-radius: 50%;
+
+        }
+
+     
+
+    </style>
+</head>
+<body>
+
+    <!-- ul>li{$}*10 -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+
+</body>
+
+</html>

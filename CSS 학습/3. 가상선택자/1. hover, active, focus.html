@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* hover : 요소에 마우스를 올렸을 때 스타일 적용 */
+        .box{
+            width: 100px;
+            height: 100px;
+            background: orange;
+
+            /* 애니메이션 속도전환 */
+            /* 없으면 바로 지정하면 이 시간에 걸쳐서 */
+            transition: 0.7s;        
+        }
+
+        .box:hover{
+            width: 200px;
+            background: red;
+        }
+
+        /* active : 요소에 마우스를 누르고 있을 때 */
+        .box:active{
+            height: 200px;
+            background: yellowgreen;
+        }
+
+        /* focus : 요소에 포커싱(탭, 클릭) 했을 때 */
+        #com{
+            width: 100px;
+            border: 1px solid gray;
+            outline:  none;
+            padding: 5px 10px;
+            margin-top: 20px;   
+            transition: 0.6s;
+        }
+
+        #com:focus {
+            border-color: red;
+            width: 200px;
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box"></div>
+
+    <input type="text" id="com">
+    
+</body>
+</html>
