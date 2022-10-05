@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* li에게 지정할 것인데 바로 위의 class 값이 orang 이어야 한다 */
+
+        .orang + li {
+            background: orangered;
+        }
+
+
+        /* class가 orang 인것 중에 바로위에 li가 있는 것만 */
+
+        li + .orang{
+           color: aqua;
+        }
+
+
+        /* li 중에 위에 li가 있는것만 */
+        /* table에서 첫줄빼고(header) 지정할때 많이 사용 */
+        li + li {
+            font-weight: 700;
+        }
+
+        /* 위에있는 값 중에 class가 orang 이있으면 됨 */
+        .orang ~ li {
+            background: pink;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <ul>
+        <li class="orang">샤인머스켓</li>
+        <li>사과</li>
+        <li>포도</li>
+        <li class="orang">멜론</li>
+        <li>수박</li>
+        <li >레몬</li>
+    </ul>
+
+
+</body>
+</html>
