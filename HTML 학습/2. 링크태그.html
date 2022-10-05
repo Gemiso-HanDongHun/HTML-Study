@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #link {   
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://www.naver.com" target="_blank">네이버로 이동</a>
+
+    <div id="link">구글로 이동</div>
+
+    <a href="1. 블록과 인라인.html">다른 페이지로 이동</a>
+    <!-- 절대 경로(로컬의 파일 경로 : D:\sl_hdh\html_css_study\HTML 학습\1. 블록과 인라인.html)로 접근하게 되면 보안에 이유로 접근할 수 없다-->
+
+    <a href="tel:+821031060834">전화걸기</a>
+    <a href="mailto:dh577895naver.com">메일 보내기</a>
+
+    <!-- #top>h1+p -->
+    <div id="top">
+        <h1>안녕하세요</h1>
+        <p style="height: 2000px;">안녕안녕~~~</p>
+    </div>
+
+    <a href="#top">   top으로 이동</a>     <!-- 구간 이동 기능 -->
+
+
+    <script>
+        link.onclick = e => {
+            location.href = 'https://www.google.com';
+        }; 
+    </script>
+
+</body>
+
+</html>
