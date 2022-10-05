@@ -1,4 +1,7 @@
 
+@import url('./side.css');
+
+
 h1 {
     color: orange;
     /* fw400 + Tab */
