@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .eco{
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+
+            /* 상속되는 속성은 글자 관련 속성 */
+            color: dodgerblue;
+            font-weight: 700;
+        }
+    
+        .animal{
+            width: 200px;
+            height: 200px;
+            background: orange;
+
+            /* 내가 정한것이 상속 받은 것보다 우선! */
+            color: gray;
+            font-weight: 400;
+        }
+
+
+        .plant{
+            width: 200px;
+            height: 200px;
+            background: green;
+
+            /* 가장 가까운곳에서 받은 값이 상속됨 */
+            color: violet;
+            font-style: 1.5em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- .eco> .animal+(.plant>div*3) -->
+    <div class="eco">생태계
+        <div class="animal">동물</div>
+        <div class="plant">식물
+            <div>소나무</div>
+            <div>튤립</div>
+            <div>해바라기</div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

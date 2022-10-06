@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parent {
+            width: 100px;
+            height: 300px;
+            border: 4px solid blue;
+            background: skyblue; 
+        }
+
+        .child {
+            /* 최대 넓이 500px, 최소 넓이 200px로 지정  -> 부모(.parent)에 영향을 받지 않음 */
+            background: orange;
+            height: 200px;
+            max-width: 500px;
+            min-width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+
+</body>
+
+</html>

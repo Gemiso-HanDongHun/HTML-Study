@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* rem을 제어하고  */
+        html{
+            font-size : 20px;
+        }
+
+        /* 전체 font-size를 제어한다 */
+        body{
+            font-size: 14px;
+        }
+
+        div{
+            border: 2px solid gray;
+            box-sizing: border-box;
+        }
+
+        .root{
+            /* em : 자기 자신의 폰트사이즈 대비 -> 50 x 20 = 1000px */
+            width: 50em;
+            font-size: 20px;
+        }
+
+        /* 20em 이었으면 부모의 폰트사이즈가 20이므로 20 x 20 = 400px */
+        /* but rem은 html에서 지정한 font-size(16) 에 영향을 받는다.    즉, 16 x 20 = 320 */
+        .parent{
+            width: 20rem;
+        }
+
+        .child{
+            width: 50%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- .root>.parent>.child*2 -->
+    <div class="root">Root
+        <div class="parent">parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

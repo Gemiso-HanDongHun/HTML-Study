@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            border: 2px solid gray;
+        }
+
+        .root{
+            /* % : 부모 요소 대비 비율 */
+            width: 500px;
+        }
+
+        /* root 대비 50% 즉, 250*/
+        .parent{ 
+            width: 50%;
+        }
+
+        /* parent 대비 50% 즉, 125 */
+        .child{
+            width: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    
+    <!-- .root>.parent>.child*2 -->
+    <div class="root">Root
+        <div class="parent">parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+
+
+</body>
+</html>
