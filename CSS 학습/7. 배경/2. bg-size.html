@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 400px;
+            height: 300px;
+            border: 2px solid red;
+            margin: 100px;
+
+
+            /* 600 x 385 이미지 */
+            background-image: url('../img/tulip.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -60px 0;
+
+            overflow:  hidden;
+        }
+
+        .box img{
+
+            /* cover 기능 */
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    <div class="box">
+        <img src="../img/tulip.jpg" alt="">
+    </div>
+
+    
+</body>
+</html>
