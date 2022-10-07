@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            width: 70%;
+            border: 2px solid red;
+            margin: 50px auto;
+            padding: 10px 0;
+        }
+        .box{
+          
+            width: 22.5%;
+
+            /* margin-right에 2%를 부여했으므로 width에서 2%를 빼준다  */
+            margin-right: 2%;
+
+            height: 100px;
+            border: 2px solid gray;
+
+            /* border에 2px이 있으므로 box-sizing을 지정해주어야 빈 공간없이 채워지게 된다 */
+            box-sizing: border-box;
+
+            background: orange;
+
+            /* 수평배치할 box한테 float : left를 부여 */
+            float: left;
+        }
+
+        .box:first-child{
+            margin-left: 2%;
+        }
+    
+        .clearfix::after{
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!-- <div class="box"></div> -->
+    </div>
+    
+</body>
+</html>

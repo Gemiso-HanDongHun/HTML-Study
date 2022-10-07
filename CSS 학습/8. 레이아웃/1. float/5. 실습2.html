@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+
+    <style>
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        a:hover {
+            color: #ff0000;
+        }
+
+        /* nav tag */
+        nav ul {
+            padding-top: 10px;
+        }
+        
+
+        /*  상단 여백 10px  */
+        nav ul li {
+            
+            display: inline;
+            /*  세로나열을 가로나열로 변경 */
+
+            /* border-left: 1px solid #999;s */
+            /* 각 메뉴의 왼쪽에 "|" 표시(분류 표시) */
+
+            /* font: bold 12px Dotum; */
+            /* 폰트 설정 - 12px의 돋움체 굵은 글씨로 표시 */
+
+            padding: 0 10px;
+            /* 각 메뉴 간격 */
+
+        }
+
+
+        /* nav .gnb,    nav .tnb 에서 float : left를 부여해야 한다 */
+        nav .gnb{
+            float: left;
+            width: 55%;
+        }
+
+        nav .tnb{
+            float: left;
+            width: 45%;
+        }
+
+
+        .clearfix::after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- nav>(ul.gnb>li*5>a)+(ul.tnb>li*3>a) -->
+    <nav class="clearfix">
+        <ul class="gnb clearfix">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BOARD</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">JOIN</a></li>
+        </ul>
+        <ul class="tnb clearfix">
+            <li><a href="#">검색</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
