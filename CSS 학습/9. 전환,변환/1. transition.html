@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 50px;
+
+            /* 늘어아는데 걸리는 시간 원본에 transition을 걸어야 돌아갈때도 동일하게 2초가 걸리면서 들어가게 된다 */
+            /* transition: 2s; */
+
+            /* background 지정시 배경색만 지정 초에 걸리도록 지정 가능 */
+            /* transition-property: background;
+            transition-duration: 2s, 1s; */
+
+            transition-property: all;
+            transition-duration: 2s;
+
+            /* 3초간 딜레이 후 바뀜 */
+            /* transition-delay: 3s; */
+
+        }
+
+        .box:hover {
+            width: 300px;
+            background: skyblue;
+
+          
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>

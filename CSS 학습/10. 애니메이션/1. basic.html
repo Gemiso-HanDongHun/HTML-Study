@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: yellowgreen;
+        }
+
+        .box:hover{
+
+            /* 애니메이션 이름 */
+            animation-name: grow;
+
+            /* 지속시간 */
+            animation-duration: 2s;
+
+            /* linear : 모든 구간 속도가 균일하게 */
+            animation-timing-function: linear;
+        
+            /* 애니메이션 반복횟수 */
+            /* infinite 로 값을 넣어주면 무한반복하게됨 */
+            animation-iteration-count: infinite;
+
+            
+            animation-direction: alternate;
+        }
+
+        /* 애니메이션 효과 정의 */
+        @keyframes grow{
+
+            /* 초기상태 */
+            0%{
+                width: 100px;
+                background: greenyellow;
+            }
+
+            /* 중간정도 진행 */
+            50%{
+                width: 500px;
+                background: orange;
+            }
+
+            100%{
+                width: 300px;
+                background: violet;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
